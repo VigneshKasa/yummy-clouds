@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital@1&family=Montserrat:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital@0;1&display=swap');
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+    border-bottom:1px solid #5b5b5b;
+}
+
+.headerCaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: #5b5b5b;
+}
+
+
+.header img {
+    height: 100px;
+}
+
+.topBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.weatherBox {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #6b605270;
+}
+
+.weatherInfoBox {
+    display: flex;
+    font-family: "poppins";
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.scrollInfo{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #5b5b5b;
+}
+.searchBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.input {
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 70%;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+.submitButton {
+    background-color: rgb(255, 199, 109);
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: center;
+    height: 45px;
+}
+
+.submitButton:hover {
+    transition: 500ms;
+    transform: scale(1.1);
+}
+
+.clearButton {
+    background-color: rgb(255, 109, 109);
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: center;
+    height: 45px;
+}
+
+.clearButton:hover {
+    transition: 500ms;
+    transform: scale(1.1);
+}
+
+.heading {
+
+    font-family: cursive;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 30px;
+    color: #ff8800;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #ff8800;
+    margin-bottom: 20px;
+}
+
+li{
+    color: black;
+    list-style-type: none;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.info{
+    color: black;
+    list-style-type: none;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.message{
+    color: rgb(255, 112, 112);
+    list-style-type: none;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.weatherImage {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.weatherImage img {
+    height: 450px;
+}
+
+.foodHeading {
+    font-family: cursive;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 199, 109);
+}
+
+.cardContainer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards1,
+.cards2,
+.cards3 {
+    width: 20%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: poppins;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.cards1 {
+    border: 1px solid green;
+    color: green;
+    /* color: rgba(181, 251, 181, 0.808); */
+}
+
+.cards2 {
+    /* color: rgba(253, 234, 159, 0.614); */
+    color: coral;
+    border: 1px solid coral;
+}
+
+.cards3 {
+    border: 1px solid rgba(255, 117, 117, 0.71);
+    color: rgb(211, 2, 2);
+}
+
+.cards1:hover {
+    background-color: rgba(181, 251, 181, 0.808);
+    color: green;
+    border: none;
+    transition: 300ms;
+    transform: scale(1.1);
+}
+
+.cards2:hover {
+    transition: 300ms;
+    background-color: rgba(253, 234, 159, 0.614);
+    border: none;
+    transform: scale(1.1);
+}
+
+.cards3:hover {
+    background-color: rgba(255, 117, 117, 0.71);
+    transition: 300ms;
+    border: none;
+    transform: scale(1.1);
+}
+
+.foodInfo {
+    margin:30px 0px;
+    border-radius:20px;
+    width:70%;
+    text-align: justify;
+    background-color:rgba(181, 251, 181, 0.808);
+    padding: 30px 50px;
+    font-family: "Poppins";
+    font-size:20px;
+}
+
+/*mobile view */
+
+@media only screen and (max-width:750px){
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+        border-bottom:1px solid #5b5b5b;
+    }
+    
+    .headerCaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:40%;
+        font-family: "Montserrat";
+        font-size: 10px;
+        color: #5b5b5b;
+    }
+    
+    
+    .header img {
+        height: 50px;
+    }
+    
+    .topBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .weatherBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #6b605270;
+    }
+    
+    .weatherInfoBox {
+        display: flex;
+        font-family: "poppins";
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    .scrollInfo{
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: #5b5b5b;
+    }
+    .searchBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .input {
+        height: 40px;
+        font-size: 15px;
+        border-radius: 10px;
+        padding-left: 10px;
+        width: 70%;
+        border: 1px solid rgb(129, 129, 129);
+    }
+    
+    .submitButton {
+        background-color: rgb(255, 199, 109);
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 20%;
+        justify-content: center;
+        height: 40px;
+        font-size:12px;
+    }
+    
+    .submitButton:hover {
+        transition: 500ms;
+        transform: scale(1.1);
+    }
+    
+ 
+    
+    .heading {
+    
+        font-family: cursive;
+        width: 100%;
+        font-family: "Poppins";
+        font-size: 30px;
+        color: #ff8800;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #ff8800;
+        margin-bottom: 20px;
+    }
+    
+    li,
+    p {
+        color: black;
+        list-style-type: none;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    
+    .weatherImage {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .weatherImage img {
+        height: 250px;
+    }
+    
+    .foodHeading {
+        font-family: cursive;
+        width: 100%;
+        font-family: "Poppins";
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(255, 199, 109);
+    }
+    
+    .cardContainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .cards1,
+    .cards2,
+    .cards3 {
+        width: 20%;
+        text-align: center;
+        border-radius: 20px;
+        font-family: poppins;
+        font-size: 18px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .cards1 {
+        border: 1px solid green;
+        color: green;
+        /* color: rgba(181, 251, 181, 0.808); */
+    }
+    
+    .cards2 {
+        /* color: rgba(253, 234, 159, 0.614); */
+        color: coral;
+        border: 1px solid coral;
+    }
+    
+    .cards3 {
+        border: 1px solid rgba(255, 117, 117, 0.71);
+        color: rgb(211, 2, 2);
+    }
+    
+    .cards1:hover {
+        background-color: rgba(181, 251, 181, 0.808);
+        color: green;
+        border: none;
+        transition: 300ms;
+        transform: scale(1.1);
+    }
+    
+    .cards2:hover {
+        transition: 300ms;
+        background-color: rgba(253, 234, 159, 0.614);
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .cards3:hover {
+        background-color: rgba(255, 117, 117, 0.71);
+        transition: 300ms;
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .foodInfo {
+        margin:30px 0px;
+        border-radius:20px;
+        width:70%;
+        text-align: justify;
+        background-color:rgba(181, 251, 181, 0.808);
+        padding: 30px 50px;
+        font-family: "Poppins";
+        font-size:12px;
+    }
+}
+
+/*mobile view */
+
+@media only screen and ((min-width:751px) and (max-width:1000px)){
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+        border-bottom:1px solid #5b5b5b;
+    }
+    
+    .headerCaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:40%;
+        font-family: "Montserrat";
+        font-size: 15px;
+        color: #5b5b5b;
+    }
+    
+    
+    .header img {
+        height: 80px;
+    }
+    
+    .topBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .weatherBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #6b605270;
+    }
+    
+    .weatherInfoBox {
+        display: flex;
+        font-family: "poppins";
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    .scrollInfo{
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: #5b5b5b;
+    }
+    .searchBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .input {
+        height: 60px;
+        font-size: 23px;
+        border-radius: 10px;
+        padding-left: 10px;
+        width: 70%;
+        border: 1px solid rgb(129, 129, 129);
+    }
+    
+    .submitButton {
+        background-color: rgb(255, 199, 109);
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 20%;
+        justify-content: center;
+        height: 60px;
+        font-size:18px;
+    }
+    
+    .submitButton:hover {
+        transition: 500ms;
+        transform: scale(1.1);
+    }
+    
+ 
+    
+    .heading {
+    
+        font-family: cursive;
+        width: 100%;
+        font-family: "Poppins";
+        font-size: 30px;
+        color: #ff8800;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #ff8800;
+        margin-bottom: 20px;
+    }
+    
+    li{  color: black;
+        list-style-type: none;
+        font-size: 23px;
+        padding-bottom: 10px;
+    }
+    .info{
+        color: black;
+        list-style-type: none;
+        font-size: 23px;
+        padding-bottom: 10px;
+    }
+    .message{
+        color: rgb(255, 112, 112);
+        list-style-type: none;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .weatherImage {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .weatherImage img {
+        height: 320px;
+    }
+    
+    .foodHeading {
+        font-family: cursive;
+        width: 100%;
+        font-family: "Poppins";
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(255, 199, 109);
+    }
+    
+    .cardContainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .cards1,
+    .cards2,
+    .cards3 {
+        width: 20%;
+        text-align: center;
+        border-radius: 20px;
+        font-family: poppins;
+        font-size: 23px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .cards1 {
+        border: 1px solid green;
+        color: green;
+        /* color: rgba(181, 251, 181, 0.808); */
+    }
+    
+    .cards2 {
+        /* color: rgba(253, 234, 159, 0.614); */
+        color: coral;
+        border: 1px solid coral;
+    }
+    
+    .cards3 {
+        border: 1px solid rgba(255, 117, 117, 0.71);
+        color: rgb(211, 2, 2);
+    }
+    
+    .cards1:hover {
+        background-color: rgba(181, 251, 181, 0.808);
+        color: green;
+        border: none;
+        transition: 300ms;
+        transform: scale(1.1);
+    }
+    
+    .cards2:hover {
+        transition: 300ms;
+        background-color: rgba(253, 234, 159, 0.614);
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .cards3:hover {
+        background-color: rgba(255, 117, 117, 0.71);
+        transition: 300ms;
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .foodInfo {
+        margin:30px 0px;
+        border-radius:20px;
+        width:70%;
+        text-align: justify;
+        background-color:rgba(181, 251, 181, 0.808);
+        padding: 30px 50px;
+        font-family: "Poppins";
+        font-size:20px;
+    }
+}
