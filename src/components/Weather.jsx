@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
-import { RiNeteaseCloudMusicLine, RiOpenaiFill } from "react-icons/ri";
+import { TiWeatherPartlySunny } from "react-icons/ti";
 import styles from "./Weather.module.css";
 import summer from "/images/summer.gif";
 import spring from "/images/spring.gif";
@@ -12,7 +12,7 @@ import { useState } from "react";
 function Weather() {
   let [cityName, SetCityName] = useState();
   let [details, setDetails] = useState(null);
-  let [message,setMessage]=useState("Lets find out")
+  let [message,setMessage]=useState()
   let [displayImg, setDisplayImg] = useState(spring);
 
   function handleInput(e) {
@@ -64,7 +64,7 @@ function  handleKeyDown(e){
           <img src="/images/logo.png" alt="" />
         </div>
         <div className={styles.headerCaption}>
-          | GET THE BEST FOOD SUGGESTIONS FROM THE AI<RiOpenaiFill/>|
+          | GET YOUR WEATHER INFORMATION FROM THE BEST SOURCE <TiWeatherPartlySunny/> |
         </div>
       </div>
       <div className={styles.topBox}>
@@ -100,13 +100,13 @@ function  handleKeyDown(e){
                   <li>Humidity : {details.main.humidity} % </li>
                   <li>Clouds : {details.clouds.all}</li>
                   <li>Winds : {details.wind.speed} KM/H</li>
-                  <p className={styles.scrollInfo}>Scroll down to get Food Info <FaAnglesDown /> </p>
                 </ul>
               </>
             )}
           </div>
           <div className={styles.weatherImage}>
             <img src={displayImg} alt="" />
+            <p className={styles.scrollInfo}>Scroll down to get Food Info <FaAnglesDown /> </p>
           </div>
         </div>
         {details && (
@@ -118,16 +118,19 @@ function  handleKeyDown(e){
                 <div className={styles.cards3}>Don't comsume</div>
               </div>
               <div className={styles.foodInfo}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic soluta laborum explicabo, quia consequuntur nostrum voluptate repudiandae, eos vitae corrupti maxime inventore sed cumque dignissimos, omnis recusandae vero minus!
-                Quae voluptates ratione repellendus pariatur, eligendi vero quibusdam, adipisci at cum voluptate aliquam sapiente consequatur reprehenderit? Eos et nulla voluptatem rerum aliquam eaque consectetur maiores sequi. Amet, sapiente? Ullam, est!
-                Accusantium sunt rerum sed corrupti cupiditate sint soluta fugit asperiores nemo, molestiae corporis magni, architecto voluptate aliquam eligendi doloribus reiciendis. Optio perspiciatis fugiat tempora est veniam animi accusantium, voluptatem unde.
-                Quidem voluptate illum soluta earum deserunt magni, ullam eveniet atque delectus animi, quisquam dolorem vitae dolore maxime aspernatur quae odit temporibus at est nemo impedit quam. A recusandae eum ullam?
-                Quam culpa autem incidunt perspiciatis ad explicabo libero hic voluptas ab voluptates pariatur aliquam dolorum, itaque aut, consectetur vero nobis nostrum porro excepturi deserunt. Possimus deserunt omnis quibusdam autem tempora?
-                Maxime doloribus sequi, illo sapiente eius delectus ratione quos nam facere quaerat voluptas officiis vero animi ducimus ipsa officia, quae libero repudiandae sint. Dolor quibusdam excepturi amet minima nobis incidunt.
-                Consequatur aliquam animi molestias expedita modi quisquam ipsum dolore mollitia cum impedit, officiis blanditiis veniam rem, sint amet et placeat, perferendis fugiat nostrum reprehenderit enim fuga? Assumenda rerum qui nesciunt.
-                A quod aspernatur laboriosam iure quae placeat nihil at exercitationem, recusandae fuga deleniti aliquam dolorem culpa autem facere officiis! Ratione nam sunt corrupti quaerat!
-                Cumque deserunt ratione inventore officiis amet commodi eveniet dolores laboriosam, numquam voluptates porro dicta. Ex, animi minus numquam unde voluptas iste nulla doloribus perferendis optio tenetur distinctio voluptatibus accusantium rerum!
-              </div>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                <p>Coming soon !!!!!</p>
+                </div>
           </>
         )}
       </div>
